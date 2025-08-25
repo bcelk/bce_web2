@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Giriş</title>
+</head>
+<body>
+    <h2>Analiz Sistemine Giriş</h2>
+    {% if error %}
+        <p style="color:red">{{ error }}</p>
+    {% endif %}
+    <form method="post">
+        Kullanıcı: <input type="text" name="username"><br><br>
+        Şifre: <input type="password" name="password"><br><br>
+        <input type="submit" value="Giriş">
+    </form>
+</body>
+</html>
